@@ -11,11 +11,11 @@ void SimpleInsertSort(int* a, unsigned n)
 		int b = a[index_to_insert];
 		int comparison_place = index_to_insert - 1;
 		while (comparison_place >= 0 && a[comparison_place] > b)
-		{					// посуваєм впорядковані елементи
+		{					// посуваємо впорядковані елементи
 			a[comparison_place + 1] = a[comparison_place];
 			--comparison_place;
 		}
-		// вставляєм черговий елемент у впорядковану частину
+		// вставляємо черговий елемент у впорядковану частину
 		a[comparison_place + 1] = b;
 	}
 	return;
